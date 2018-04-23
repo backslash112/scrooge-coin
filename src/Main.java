@@ -19,6 +19,7 @@ public class Main {
         byte[] initialHash = BigInteger.valueOf(0).toByteArray();
         tx.addInput(initialHash, 0);
 
+        tx.signTx(pk_scrooge.getPrivate(), 0);
         /*
          * Set up the UTXPool
          */
