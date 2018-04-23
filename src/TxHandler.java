@@ -7,6 +7,7 @@ public class TxHandler {
      */
     public TxHandler(UTXOPool utxoPool) {
         // IMPLEMENT THIS
+        UTXOPool copyUtxoPool = new UTXOPool(utxoPool);
     }
 
     /**
@@ -20,6 +21,7 @@ public class TxHandler {
      */
     public boolean isValidTx(Transaction tx) {
         // IMPLEMENT THIS
+        return false;
     }
 
     /**
@@ -29,6 +31,7 @@ public class TxHandler {
      */
     public Transaction[] handleTxs(Transaction[] possibleTxs) {
         // IMPLEMENT THIS
+        return null;
     }
 
 }
